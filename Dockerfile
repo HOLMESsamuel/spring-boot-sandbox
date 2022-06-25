@@ -8,7 +8,7 @@ ENTRYPOINT ["java", "-jar", "spring-boot-sandbox-0.0.1-SNAPSHOT.jar"]
 
 #To build the image :
 #in project directory powershell run :
-#docker build -t nomdelimage .
+#docker build -t nomdelimage . -> warning there is a "."
 
 #to list the images : docker images
 
@@ -20,4 +20,4 @@ ENTRYPOINT ["java", "-jar", "spring-boot-sandbox-0.0.1-SNAPSHOT.jar"]
 #docker rmi imagename
 
 #to run the image
-#docker run port:port user/reponame
+#docker run -p port:port user/reponame
