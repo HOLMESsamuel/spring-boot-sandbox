@@ -1,0 +1,12 @@
+<div th:switch="${cats}">
+    <h2 th:case="null">No cats!</h2>
+    <div th:case="*">
+            <tbody>
+            <tr th:each="cat : ${cats}">
+                <h2 th:text="${cat.name}"></h2>
+                <bl></bl>
+                <img th:src="@{images/razmo.jpg}" width="300"/>
+            </tr>
+            </tbody>
+    </div>
+</div>
